@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      color: azure;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(47deg, rgba(174, 224, 238, 1) 0%, rgba(174, 173, 223, 1) 47%, rgba(21, 102, 195, 1) 100%);
+      min-height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 70vh;
+    }
+
+    .video-container {
+      width: 50%;
+      height: 70%;
+      border-radius: 10px;
+      background-color: rgb(174, 224, 238);
+    }
+
+    .video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .icons {
+      width: 45px;
+      height: 45px;
+    }
+
+    .footer {
+      margin-top: 70px;
+      width: 100%;
+      height: 100px;
+      color: wheat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .span {
+      color: white;
+      font-size: 18px;
+    }
+
+    .icons-container {
+      margin: 10px;
+    }
+
+    .a {
+      color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>My video player</h1>
+  </header>
+  <main class="main">
+    <div class="video-container">
+      <video class="video" src="./Our-Story in -one-Minute_480p.mp4">
+      </video>
+    </div>
+  </main>
+  <footer class="footer">
+    <span class="span">Seguinos en</span>
+    <div class="icons-container">
+      <a class="a" href="https://www.instagram.com/misaellvz" target="blank">
+        <img class="icons" src="https://img.icons8.com/dotty/80/ffffff/instagram-new.png" />
+      </a>
+      <a class="a" href="https://twitter.com/misaellvz" target="blank">
+        <img class="icons" src="https://img.icons8.com/dotty/80/ffffff/twitter.png" />
+      </a>
+      <img class="icons" src="https://img.icons8.com/dotty/80/ffffff/facebook.png" />
+      <img class="icons" src="https://img.icons8.com/dotty/80/ffffff/youtube-play.png" />
+      <a class="a" href="https://www.linkedin.com/in/misael-valdez-659867181/" target="blank">
+        <img class="icons" src="https://img.icons8.com/dotty/80/ffffff/linkedin.png" />
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
