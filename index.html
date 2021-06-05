@@ -36,13 +36,13 @@
     }
 
     .video-container {
-      width: 50%;
+      width: 60%;
       height: 70%;
       border-radius: 10px;
       background-color: rgb(174, 224, 238);
     }
 
-    .video {
+    .my-video {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -78,6 +78,46 @@
     .a {
       color: transparent;
     }
+
+    .play-video {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20%;
+      outline: none;
+      border: 0;
+    }
+
+    .mute-icon {
+      height: 40px;
+      width: 40px;
+    }
+
+    .mute-video {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20%;
+      outline: none;
+      border: 0;
+    }
+
+    .sound-icon {
+      height: 40px;
+      width: 40px;
+    }
+
+    .pause-icon {
+      height: 40px;
+      width: 40px;
+    }
+
+    .play-icon {
+      height: 40px;
+      width: 40px;
+    }
   </style>
 </head>
 
@@ -87,9 +127,14 @@
   </header>
   <main class="main">
     <div class="video-container">
-      <video class="video" controls
-        src="https://drive.google.com/uc?export=download&id=1a_my6od3_2-dbKVRac3SHHC6vdUqALyV">
+      <video class="my-video" id="video" src="../Toast-One-Minute-Comedy.mp4">
       </video>
+      <button class="play-video" id="playPause">
+        <img class="play-icon" src="https://img.icons8.com/dotty/80/000000/play.png" />
+      </button>
+      <button class="mute-video" id="muteUnmute">
+        <img class="mute-icon" src="https://img.icons8.com/dotty/80/000000/no-audio.png" />
+      </button>
     </div>
   </main>
   <footer class="footer">
@@ -109,5 +154,6 @@
     </div>
   </footer>
 </body>
+<script src="./index.js"></script>
 
 </html>
